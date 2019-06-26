@@ -256,6 +256,7 @@ df7.describe()
 
 # In[ ]:
 
-
+from pylab import rcParams
+rcParams['figure.figsize'] = 15, 5
 
 

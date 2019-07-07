@@ -24,20 +24,33 @@ attrs = {'class': 'thing','data-domain': 'self.datascience'}
 for post in soup.find_all('div',attrs=attrs):
     title = post.find('p',class_="title").text
     print(title)
-    print("\n\n")
+    #print("\n\n")
     #print(post.attrs['data-domain'])
 
-print("\n\nThe Author\n\n")
+#print("\n\nThe Author\n\n")
 for post in soup.find_all('div',attrs=attrs):
     author = post.find('a',class_="author").text
-    print("Author = ", author)
-    print("\n\n")
+    print(author)
+    #print("\n\n")
 
-print("Comments\n\n\n")
+#print("Comments\n\n\n")
 for post in soup.find_all('div',attrs=attrs):
-    comment = post.find('a',class_="comments").text
+    comment = post.find('a',class_="comments").text.split()[0]
+    if comment == "comment":
+    	comment = 0
     print(comment)
-    print("\n\n")
+
+ #print("\n\n")
+
+print("likes")
+for post in soup.find_all('div',attrs=attrs):
+    likes = post.find("div", attrs = {"class": "score likes"}).text
+    if likes == ".":
+    	likes = "none"
+    print(likes)
+
+
+
 
 
 '''

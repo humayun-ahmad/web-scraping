@@ -49,8 +49,24 @@ for post in soup.find_all('div',attrs=attrs):
     	likes = "none"
     print(likes)
 
+counter = 1
 
+for post in soup.find_all('div', attrs = attrs):
+	title = post.find('p',class_="title").text
+	author = post.find('a',class_="author").text
+	comment = post.find('a',class_="comments").text.split()[0]
+	if comment == "comment":
+		comment = 0
+	likes = post.find("div", attrs = {"class": "score likes"}).text
+	if likes == ".":
+		likes = "none"
+	post_line = [counter, title, author, likes, comment]
 
+	with open('output.csv','a') as f:
+		writer = csv.writer(f)
+		writer.writerow(post_line)
+	counter += 1
+	
 
 
 '''

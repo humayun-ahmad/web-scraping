@@ -69,6 +69,8 @@ for post in soup.find_all('div', attrs = attrs):
 	
 
 
+
+
 '''
 for domain in domains:
     for link in domain.find('a'):

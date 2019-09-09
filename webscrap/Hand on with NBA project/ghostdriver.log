@@ -1,0 +1,19 @@
+[INFO  - 2019-09-09T08:50:14.288Z] GhostDriver - Main - running on port 8946
+[INFO  - 2019-09-09T08:50:16.530Z] Session [d84f9e60-d2de-11e9-b3ac-d3990d7e0260] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2019-09-09T08:50:16.530Z] Session [d84f9e60-d2de-11e9-b3ac-d3990d7e0260] - page.customHeaders:  - {}
+[INFO  - 2019-09-09T08:50:16.530Z] Session [d84f9e60-d2de-11e9-b3ac-d3990d7e0260] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2019-09-09T08:50:16.531Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: d84f9e60-d2de-11e9-b3ac-d3990d7e0260
+[ERROR - 2019-09-09T08:50:33.174Z] Session [d84f9e60-d2de-11e9-b3ac-d3990d7e0260] - page.onError - msg: TypeError: undefined is not an object (evaluating 'Ve[0].dataset')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-09-09T08:50:33.175Z] Session [d84f9e60-d2de-11e9-b3ac-d3990d7e0260] - page.onError - stack:
+  createAdFuelUtilities (https://i.cdn.turner.com/ads/adfuel/adfuel-1.3.5.min.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-09-09T08:50:51.164Z] Session [d84f9e60-d2de-11e9-b3ac-d3990d7e0260] - page.onError - msg: TypeError: undefined is not an object (evaluating 'window.AdFuelUtils.addEvent')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-09-09T08:50:51.165Z] Session [d84f9e60-d2de-11e9-b3ac-d3990d7e0260] - page.onError - stack:
+  global code (https://www.nba.com/modules/custom/nba_ads/js/global-banner-ad.js?pxbfxx:7)
+
+  phantomjs://platform/console++.js:263 in error

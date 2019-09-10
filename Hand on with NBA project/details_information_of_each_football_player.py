@@ -11,14 +11,32 @@ while t < 1:
 	url = "https://www.nba.com/players"
 	driver.get(url)
 
-	c = driver.page_source
+	
 
-	ht_doc = BeautifulSoup(c, 'lxml')
+	ht_doc = BeautifulSoup(driver.page_source, 'lxml')
 
-	test_link = ht_doc.find_all('a')
+	test_link = ht_doc.find_all('a',class_ = 'row playerList')
 	for ln in test_link:
-		string1 = ln.text
-		print(string1)
+		string1 ="www.nba.com" + ln.get('href')
+		#print(string1)
+
+		driver.get(string1)
+
+		each_players_html = BeautifulSoup(driver.page_source,'lxml')
+
+		#print(each_players_html)
+
+		a_section = each_players_html.find('section', class_='nba-player-vitals small-12 large-6')
+
+
+		print(a_section)
+
+		#Height = each_players_html.findNextSiblings('p')
+
+		break
+
+
+
 
 	# for a in ht_doc.find('a'):
 	# 	link = a.get('href')

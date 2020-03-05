@@ -1,0 +1,5 @@
+Prerequisites:
+	1. Basic working programming knowledge in python
+	2. Knowledge of Pandas DataFrame
+	3. How to import modules in python
+

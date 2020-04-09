@@ -1,0 +1,18 @@
+from bs4 import BeautifulSoup
+import requests
+
+source = requests.get('https://coreyms.com/').text
+
+soup = BeautifulSoup(source,'lxml')
+
+# print(soup.prettify())
+article = soup.find("article")
+headline = article.h2.a.text
+# print(headline)
+summary = article.div.p.text
+# print(summary)
+vid_src = article.find("iframe", class_="youtube-player")['src']
+# print(vid_src)
+
+vid_id = vid_src.split('/')
+print(vid_id)

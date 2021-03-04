@@ -1,0 +1,147 @@
+{
+  "id": "9c73b8b2-2064-4c32-afb6-8f02fda86220",
+  "version": "2.0",
+  "name": "demo",
+  "url": "https://www.bissoy.com",
+  "tests": [{
+    "id": "92083f78-4588-4b96-b9a3-5e7acf173ac4",
+    "name": "Untitled",
+    "commands": [{
+      "id": "206aff1f-e5fe-41dd-8cb0-9e912c59c94b",
+      "comment": "",
+      "command": "open",
+      "target": "/q/1111111262187",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e8e6fd69-cf67-48c3-a807-9891916608af",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "852x738",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b5b46518-565a-4cfd-af8d-77a01fa8b0b6",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.qa-who span",
+      "targets": [
+        ["css=.qa-who span", "css:finder"],
+        ["xpath=//strong/a/span", "xpath:position"]
+      ],
+      "value": "HassanJubaa"
+    }, {
+      "id": "b797145c-8271-49b6-b55d-cc79209cf31c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#a-1111111262782 .qa-user-link > span",
+      "targets": [
+        ["css=#a-1111111262782 .qa-user-link > span", "css:finder"],
+        ["xpath=//div[@id='a-1111111262782']/div/div/div[2]/strong/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/strong/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'সোহাগহাসান')]", "xpath:innerText"]
+      ],
+      "value": "সোহাগহাসান"
+    }, {
+      "id": "5d71e1f0-8d4e-4f4a-9505-22556901db20",
+      "comment": "",
+      "command": "click",
+      "target": "css=#a-1111111262782 p",
+      "targets": [
+        ["css=#a-1111111262782 p", "css:finder"],
+        ["xpath=//div[@id='a-1111111262782']/div/div[2]/div/div/p", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'দাড়ি প্রাকৃতিক একটি বিষয় এটা প্রাকৃতিকভাবেই গজাবে....তবে বাজারে কিছু ব্রেড ওয়েল পাওয়া যায় ঐগুলো চেস্টা করতে পারেন....!!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2cd14de1-0893-405b-b5aa-908d177356ee",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,939)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9cf564f6-9647-4868-97de-802dbfa367d1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#a-1111111262782 p",
+      "targets": [
+        ["css=#a-1111111262782 p", "css:finder"],
+        ["xpath=//div[@id='a-1111111262782']/div/div[2]/div/div/p", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'দাড়ি প্রাকৃতিক একটি বিষয় এটা প্রাকৃতিকভাবেই গজাবে....তবে বাজারে কিছু ব্রেড ওয়েল পাওয়া যায় ঐগুলো চেস্টা করতে পারেন....!!')]", "xpath:innerText"]
+      ],
+      "value": "দাড়ি প্রাকৃতিক একটি বিষয় এটা প্রাকৃতিকভাবেই গজাবে....তবে বাজারে কিছু ব্রেড ওয়েল পাওয়া যায় ঐগুলো চেস্টা করতে পারেন....!!"
+    }, {
+      "id": "3807bafe-dbff-4cec-8909-8371b1325312",
+      "comment": "",
+      "command": "click",
+      "target": "css=#a-1111111262782 p",
+      "targets": [
+        ["css=#a-1111111262782 p", "css:finder"],
+        ["xpath=//div[@id='a-1111111262782']/div/div[2]/div/div/p", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'দাড়ি প্রাকৃতিক একটি বিষয় এটা প্রাকৃতিকভাবেই গজাবে....তবে বাজারে কিছু ব্রেড ওয়েল পাওয়া যায় ঐগুলো চেস্টা করতে পারেন....!!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aada07c5-f163-4959-88eb-12c6b6d2234e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#a-1111111262784 .qa-user-link > span",
+      "targets": [
+        ["css=#a-1111111262784 .qa-user-link > span", "css:finder"],
+        ["xpath=//div[@id='a-1111111262784']/div/div/div[2]/strong/a/span", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div[2]/strong/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Jamiar')]", "xpath:innerText"]
+      ],
+      "value": "Jamiar"
+    }, {
+      "id": "0fd38104-0d1f-480b-822f-031462840385",
+      "comment": "",
+      "command": "click",
+      "target": "css=#a-1111111262784 .answer",
+      "targets": [
+        ["css=#a-1111111262784 .answer", "css:finder"],
+        ["xpath=//div[@id='a-1111111262784']/div/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "405b4f9f-9e32-4bc1-8741-d789a0887a92",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.answer > p:nth-child(3)",
+      "targets": [
+        ["css=.answer > p:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='a-1111111262784']/div/div[2]/div/div/p[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/p[3]", "xpath:position"],
+        ["xpath=//p[contains(.,'তাই বলা সম্ভব না ও উপায় নেই নিজ থেকেে  চাপ দাড়ি গজানো।')]", "xpath:innerText"]
+      ],
+      "value": "তাই বলা সম্ভব না ও উপায় নেই নিজ থেকেে  চাপ দাড়ি গজানো।"
+    }, {
+      "id": "13ccc98a-0395-420f-9b80-b45d8178d1b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.answer > p:nth-child(3)",
+      "targets": [
+        ["css=.answer > p:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='a-1111111262784']/div/div[2]/div/div/p[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/p[3]", "xpath:position"],
+        ["xpath=//p[contains(.,'তাই বলা সম্ভব না ও উপায় নেই নিজ থেকেে  চাপ দাড়ি গজানো।')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1ea8414f-f32d-468d-b951-0ff303aabfe1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["92083f78-4588-4b96-b9a3-5e7acf173ac4"]
+  }],
+  "urls": ["https://www.bissoy.com/"],
+  "plugins": []
+}

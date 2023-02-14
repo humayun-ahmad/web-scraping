@@ -9,4 +9,4 @@ column 2 contain passwords
 
 changed youtube channel link and add your channel link on script.py line 33
 
-Now run and see all work will be done by your computer...
+Now run and see all work will be done by your computer
